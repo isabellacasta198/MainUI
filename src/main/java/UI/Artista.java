@@ -15,4 +15,7 @@ public class Artista extends JFrame {
     public void agregarCancion(Canciones cancion) {
         canciones.add(cancion);
     }
+    public String obtenerInformacion (){
+        return  "nombre:" +nombre+" pais:"+pais+"genero:"+genero;
+    }
 }
