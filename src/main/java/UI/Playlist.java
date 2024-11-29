@@ -1,12 +1,10 @@
 package UI;
 import java.awt.*;
 import javax.swing.*;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Playlist extends JFrame {
+public class Playlist extends JFrame {
     String Nombre;
     String descripcion;
     List<Canciones> canciones;
@@ -19,7 +17,14 @@ public abstract class Playlist extends JFrame {
         ArrayList<Canciones> canciones = new ArrayList<>();
         return canciones;
     }
-    public abstract void agregarCanciones(Canciones cancion);
-    public abstract void eliminarCanciones(Canciones cancion);
+    public void agregarCanciones(){
+        agregarCanciones();
 
+    }
+    public void eliminarCanciones(){
+        eliminarCanciones();
+    }
+    public String obtenerInformacion (){
+        return  "nombre:" +Nombre+"descripcion:" +descripcion+"canciones:" +canciones;
+    }
 }
