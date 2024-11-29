@@ -17,5 +17,11 @@ public class Canciones extends JFrame {
     public String getTitulo() {
         return titulo;
     }
+    public void reproducir() {
+        System.out.println("Reproduciendo:"+titulo);
+    }
+    public String obtenerInformacion() {
+        return "Titulo: " + titulo + ", Duración: " + duracion + "Género: " + genero + ", Artista: " + artista;
+    }
 
 }
